@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: auto 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -8,7 +8,7 @@
 header {
   height: 80vh;
   width: 100%;
-  background-image: url(/img/header.jpg);
+  background-image: url(/restaurant-webside/img/bar-g5762a6ab8_1920.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -21,6 +21,10 @@ nav {
   padding-bottom: 40px;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 .logo {
@@ -57,14 +61,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .mainimg {
-  height: 400px;
+  max-width: 100%;
 }
 
 .main {
@@ -74,10 +78,68 @@ main {
 .titlemain {
   font-size: 13px;
   letter-spacing: 2px;
-  color: #758737;
+  color: #ae0308;
 }
 
 .h2main {
+  font-size: 20px;
+  font-weight: 700;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.menu {
+  background-color: white;
+  margin: 0 350px 0 350px;
+  padding: 60px 40px 0px 40px;
+}
+
+#menutitle {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.menu p {
+  display: flex;
+  color: black;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.examplemenu {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.exampledrink {
+  text-align: justify;
+}
+
+.exampletitle {
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.exampledescription {
+  padding: 0px 20% 0px 20%;
+}
+
+.drinkimg {
+  max-width: 100%;
+  height: 335px;
 }
