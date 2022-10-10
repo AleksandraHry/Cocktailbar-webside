@@ -31,6 +31,7 @@ nav a {
   color: white;
   font-size: 40px;
   letter-spacing: 5px;
+  padding-right: 666px;
 }
 
 span {
@@ -80,7 +81,9 @@ main {
   width: 800px;
   border: 20px solid white;
   border-left: none;
-  padding-right: 300px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
   padding-left: 50px;
   text-align: justify;
   align-content: center;
@@ -88,7 +91,7 @@ main {
 }
 
 .titlemain {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 13px;
   letter-spacing: 2px;
   color: #ae0308;
@@ -102,7 +105,7 @@ main {
   font-size: 20px;
   font-weight: 700;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   color: black;
 }
 
@@ -235,4 +238,21 @@ section p {
 
 .reservationbutton a:hover {
   opacity: 0.5;
+}
+
+address {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#addresselements {
+  font-size: 16px;
+}
+#addresselements a {
+  text-decoration: none;
+  color: #000000;
 }
