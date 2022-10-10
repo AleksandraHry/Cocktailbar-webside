@@ -28,8 +28,15 @@ nav {
   padding-bottom: 40px;
   padding-left: 10%;
   padding-right: 10%;
+  position: relative;
 }
 
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-around;
+}
 nav a {
   text-decoration: none;
 }
@@ -38,31 +45,95 @@ nav a {
   color: white;
   font-size: 40px;
   letter-spacing: 5px;
-  padding-right: 666px;
 }
 
 span {
   color: #ae0308;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-nav ul li a {
+nav a {
   color: white;
-  text-decoration: none;
   font-weight: 700;
-  border: 2px solid #ffffff;
   padding: 10px 20px;
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  background-color: white;
 }
 
-nav ul li a:hover {
-  color: #ae0308;
-  transition: 0.3s;
-  border: 2px solid #ae0308;
+nav a:hover::after {
+  width: 100%;
+  background-color: #ae0308;
+}
+
+.menu {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background: white;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu.active .line:first-child {
+    transform: translateY(-300px);
+  }
+
+  .menu.active .line:nth-child(2) {
+    transform: rotate(-405deg) translateY(8px);
+  }
+
+  .menu.active .line:nth-child(3) {
+    transform: rotate(-320deg) translateY(-10px);
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    background-color: black;
+    height: 92vh;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(100%);
+    transition: 0.3s ease-in-out;
+  }
+  nav ul.active {
+    transform: translate(0%);
+  }
+
+  nav ul a {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  nav ul {
+    width: 100%;
+  }
 }
 
 main {
