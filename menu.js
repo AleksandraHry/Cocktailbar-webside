@@ -1,7 +1,7 @@
-const mobileNav = document.querySelector("li");
-const menuIcon = document.querySelector(".menu");
+const mobileNav = document.querySelector("ul");
+const burgerIcon = document.querySelector(".burger");
 
-menuIcon.addEventListener("click", function () {
+burgerIcon.addEventListener("click", function () {
   mobileNav.classList.toggle("active");
-  menuIcon.classList.toggle("active");
+  burgerIcon.classList.toggle("active");
 });
