@@ -136,6 +136,88 @@ nav {
   display: none;
 }
 
+@media only screen and (max-width: 1800px) {
+  .product {
+    margin: 0 !important;
+    justify-content: space-evenly !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .card {
+    margin: 0 !important;
+    height: 380px !important;
+  }
+
+  .product-info {
+    width: 380px !important;
+  }
+
+  .card:hover .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-img {
+    width: 380px !important;
+    height: 380px !important;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .wrapper2 {
+    margin: 0 50px 200px 50px !important;
+  }
+
+  .product {
+    height: 500px !important;
+  }
+
+  .product-card {
+    padding-top: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .product-img {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .card {
+    margin: 0 !important;
+    height: 350px !important;
+  }
+
+  .product-info {
+    width: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .product {
+    flex-direction: column;
+    gap: 20px;
+    height: 1400px !important;
+  }
+
+  .card {
+    height: 400px !important;
+  }
+
+  .product-img {
+    height: 400px !important;
+    width: 400px !important;
+  }
+  .product-info {
+    width: 400px !important;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .burger {
     display: block;
@@ -173,6 +255,250 @@ nav {
   }
 }
 
+@media only screen and (max-width: 880px) {
+  .wrapper2 {
+    margin: 0 10px !important;
+    padding: 270px 10px 72px 10px !important;
+  }
+  .container h2 {
+    font-size: 70px !important;
+  }
+  .mainimg {
+    width: 350px;
+  }
+  .menu ul {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .main {
+    flex-direction: column;
+    justify-content: center !important;
+    border: 40px solid #ffffff !important;
+  }
+  .owner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .owner h2 {
+    text-align: center !important;
+  }
+
+  .container h2 {
+    font-size: 50px !important;
+  }
+
+  .reservationbutton a {
+    padding: 15px 20px !important;
+    font-size: 15px !important;
+  }
+  address {
+    height: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    align-items: center !important;
+  }
+  .reserve {
+    align-items: center;
+  }
+
+  .reserve p {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .product-img {
+    width: 320px !important;
+    height: 320px !important;
+  }
+
+  .card {
+    margin: 0 !important;
+    height: 320px !important;
+  }
+
+  .product-info {
+    width: 320px !important;
+  }
+
+  .product {
+    height: 1150px !important;
+  }
+
+  .background,
+  .background-2 {
+    height: 600px !important;
+  }
+
+  .wrapper2 {
+    padding: 200px 10px 72px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .mainimg {
+    width: 280px;
+  }
+
+  .main {
+    border: 20px solid white;
+  }
+
+  .owner h2 {
+    font-size: 30px !important;
+  }
+
+  .owner p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 40px !important;
+  }
+
+  .product-img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .card {
+    margin: 0 !important;
+    height: 280px !important;
+  }
+
+  .product-info {
+    width: 280px !important;
+    height: 140px !important;
+    padding: 0 !important;
+  }
+
+  .product {
+    height: 1000px !important;
+  }
+
+  .product-info h2 {
+    font-size: 30px !important;
+  }
+
+  .product-info p {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .logo {
+    font-size: 25px;
+  }
+
+  .mainimg {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .product-img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .card {
+    margin: 0 !important;
+    height: 200px !important;
+  }
+
+  .product-info {
+    width: 200px !important;
+    height: 100px !important;
+    padding: 0 !important;
+  }
+
+  .product-info h2 {
+    font-size: 20px !important;
+    margin: 5px !important;
+  }
+
+  .product-info p {
+    font-size: 10px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  .product {
+    height: 800px !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+  }
+
+  .reservationbutton a {
+    border: 1px solid white !important;
+    font-weight: 400 !important;
+    padding: 10px 10px !important;
+  }
+
+  .wrapper2 {
+    margin: 0 !important;
+    padding: 200px 0 72px 0 !important;
+  }
+
+  address {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .main {
+    border: none !important;
+  }
+  section {
+    padding: 20px 0 !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  .owner h2 {
+    font-size: 20px !important;
+  }
+
+  .owner h3 {
+    font-size: 15px !important;
+  }
+
+  .owner p {
+    font-size: 12px !important;
+  }
+
+  .product {
+    gap: 0;
+    height: 700px !important;
+  }
+
+  .product-card {
+    padding-top: 20px !important ;
+  }
+}
 .wrapper {
   max-width: 1920px;
   width: 100%;
@@ -203,7 +529,7 @@ section#about2 {
 .container h2 {
   color: white;
   font-weight: 100;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: 80px;
   text-transform: uppercase;
 }
