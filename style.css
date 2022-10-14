@@ -27,11 +27,11 @@
 
 ::-webkit-scrollbar-thumb {
   background: #000000;
-  border: var(--red) 1px solid;
+  background: var(--red);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--red);
+  background: var(--redhover);
 }
 
 h2 {
@@ -39,18 +39,21 @@ h2 {
   color: var(--font);
   text-align: center;
   font-weight: 700;
+  cursor: default;
 }
 
 h3 {
   font-size: 24px;
   color: var(--font);
   font-weight: 700;
+  cursor: default;
 }
 
 p {
   font-size: 16px;
   color: #525252;
   font-weight: 400;
+  cursor: default;
 }
 
 header {
@@ -180,33 +183,36 @@ section {
   padding: 80px 0;
 }
 
-.background {
+.background,
+.background-2 {
   max-width: 100%;
   height: 800px;
 }
 
-/*.mainimg {
-  max-width: 100%;
-  border: 20px solid #921d1d;
-  border-right: none;
-}
-
-#about {
-  height: 440px;
-  width: 530px;
-  border: 20px solid #921d1d;
-  border-left: none;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 50px;
-  padding-left: 50px;
-  text-align: justify;
-  align-content: center;
-  background-color: white;
-}*/
-
 section#about2 {
   padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.container h2 {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 15px;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.container h3 {
+  color: white;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 13px;
 }
 
 .wrapper-about {
@@ -257,14 +263,6 @@ img .mainimg {
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
-}
-
-.product-card {
-  justify-content: center;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bolder;
-  padding-bottom: 100px;
 }
 
 .product {
@@ -326,63 +324,58 @@ img .mainimg {
   color: #000000;
 }
 
-#reservesection {
-  height: 560px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
-  padding-left: 600px;
-  padding-top: 150px;
-  color: white;
+section#local {
+  padding: 0;
 }
 
-.reservation {
+.wrapper2 {
+  margin: 0 300px 200px 300px;
+  height: 600px;
+  padding: 270px 50px 72px 50px;
+}
+.reserve {
   font-size: 50px;
-  font-weight: bolder;
   letter-spacing: 2px;
-  color: #fffbfb;
-  text-shadow: 2px 3px 0px #ae0308;
-  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.h2reservation {
-  font-size: 20px;
-  font-weight: 700;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.reserve h2 {
+  color: white;
+  text-shadow: 2px 3px 0px #ae0308;
+  text-align: left;
+  cursor: default;
+}
+
+.reserve p {
+  color: white;
+  letter-spacing: normal;
 }
 
 .reservationbutton a {
-  position: relative;
-  display: inline-block;
   padding: 15px 30px;
   border: 2px solid white;
   text-transform: uppercase;
-  color: black;
-  text-decoration: none;
+  color: #ffffff;
   font-weight: 600;
   font-size: 14px;
-  background-color: white;
+  transition: 0.5s ease-in-out;
 }
 
 .reservationbutton a:hover {
-  opacity: 0.5;
+  border: 2px solid var(--black);
+  color: var(--black);
+  background-color: white;
 }
 
 address {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
-#addresselements {
-  font-size: 16px;
-}
-#addresselements a {
-  text-decoration: none;
+address a {
   color: #000000;
 }
