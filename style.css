@@ -245,7 +245,7 @@ nav {
     right: 0;
     top: 80px;
     background-color: var(--redhover);
-    height: 92vh;
+    height: 96vh;
     flex-direction: column;
     text-align: -webkit-center;
     justify-content: space-around;
